@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Formulario from './Componentes/Formulario';
 import { BotaoContagem } from './Componentes/BotaoContagem';
 import Lampada from './Componentes/Lampada';
+import CartoesEventos from './Componentes/Eventos';
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       {console.log(useState("meu texto"))}   */}
       <BotaoContagem/>
       <Lampada/>
+
+      <CartoesEventos></CartoesEventos>
+
+
 
 
     </div>
