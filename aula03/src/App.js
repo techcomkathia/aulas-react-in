@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { BotaoAlerta } from './Componentes/Alerta';
+import Mensagem from './Componentes/Mensagem';
+import { useState } from 'react';
+import Formulario from './Componentes/Formulario';
+import { BotaoContagem } from './Componentes/BotaoContagem';
+import Lampada from './Componentes/Lampada';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <BotaoAlerta mensagem="Mensagem personalizada do alerta"> Clique em mim</BotaoAlerta>
+      <Mensagem mensagem='Meu texto no console'>Escrever no console</Mensagem> 
+      <Formulario/>
+      {console.log(useState("meu texto"))}   */}
+      <BotaoContagem/>
+      <Lampada/>
+
+
     </div>
   );
 }
