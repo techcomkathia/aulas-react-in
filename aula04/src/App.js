@@ -5,6 +5,7 @@ import Calculadora from './componentes/exemplos/Calculadora';
 import ContadorSegundos from './componentes/exemplos/ContadorSegundos';
 import ConsumindoServico from './componentes/exemplos/ChamadaApi';
 import ChamadaApi from './componentes/exemplos/ChamadaApi';
+import Shows from './componentes/atividade/Shows';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <DadosAluno></DadosAluno>
       {/* <ContadorSegundos></ContadorSegundos> */}
       <ChamadaApi></ChamadaApi>
+      <Shows></Shows>
 
       
     </div>
