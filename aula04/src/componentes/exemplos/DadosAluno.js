@@ -25,7 +25,7 @@ export function DadosAluno(){
 
     function cadastrarAluno(){
              
-        setId(id+1)
+        setId((id)=>id+1)
         let aluno = {'id': id,'nome': nome, 'curso': curso}
         setAlunos([...alunos, aluno])
         setNome(" ")
