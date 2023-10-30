@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { DadosAluno } from './componentes/DadosAluno';
+import { DadosAluno } from './componentes/exemplos/DadosAluno';
 
 function App() {
   return (
