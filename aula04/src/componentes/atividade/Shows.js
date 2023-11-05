@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
+// Crie um select com duas opções
+// para ordenar os eventos, uma
+// por datas crescentes e datas
+// decrescentes. Adicione o valor
+// em um state;
+
+// Crie um useEffect que irá
+// ordenar a lista de eventos
+// sempre que o valor do select
+// mudar.
 
 export default function Show(){
 
