@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Routes, Route, Navigate, Outlet} from 'react-router-dom'
+
+import Home from './Pages/Home';
+import Sobre from './Pages/Sobre';
+import BarraNavegacao from './Componentes/BarraNavegacao';
+import Contatos from './Pages/Contatos';
+import PagNaoEncontrada from './Pages/PagNaoLocalizada';
 
 function App() {
-  return (
+  return (    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {/* Componente que guarda os Links */}
+        <BarraNavegacao/>
+
+        <Routes>
+            <Route index element={<Home/>}/>
+            <Route path='/sobre' element={<Sobre/>}/>
+
+            {/* Redirecionamento de paginas  */}
+            <Route path='/telefones' element={<Navigate to='/contatos'/>}/>
+            <Route path='/contatos' element={<Contatos/>}/>
+             {/* página não encontrada */}            
+            /* <Route path='*' element={<PagNaoEncontrada/>}/>
+        </Routes>
+
+        {/* Outlet representa a pagina atual
+        renderizada. É util para criar um
+        componente de layout padrão que irá
+        renderizar em qualquer rota. */} 
+        <Outlet/>
+        
+      </BrowserRouter>
+      
+            
     </div>
   );
 }
