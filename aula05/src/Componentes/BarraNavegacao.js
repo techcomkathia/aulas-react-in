@@ -10,7 +10,8 @@ function BarraNavegacao() {
         <Link to="/">Home</Link>
         <Link to="/sobre">Sobre</Link>
         <Link to="/contatos">Contatos</Link>
-        <Link to='/telefones'>telefones</Link>
+        <Link to='/telefones'>Telefones</Link>
+        <Link to='/listaLivros'> Livros</Link>
     </nav>
   )
 }
