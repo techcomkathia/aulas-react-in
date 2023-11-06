@@ -8,15 +8,19 @@ import Contatos from './Pages/Contatos';
 import PagNaoEncontrada from './Pages/PagNaoLocalizada';
 import LivroDetalhes from './Pages/LivroDetalhes';
 import LivrosLista from './Pages/LivrosLista';
+import UsuarioDetalhes from './Pages/UsuarioDetalhes';
+import UsuariosLista from './Pages/UsuariosLista';
+
 
 
 function App() {
   return (    
     <div className="App">
+      
+      
       <BrowserRouter>
         {/* Componente que guarda os Links */}
         <BarraNavegacao/>
-
         <Routes>
             <Route index element={<Home/>}/>
             <Route path='/sobre' element={<Sobre/>}/>
@@ -29,6 +33,8 @@ function App() {
             
             <Route path="/listaLivros" element={<LivrosLista/>} />
             <Route path="/livro/:id" element={<LivroDetalhes />} />
+            <Route path="/usuarios" element={<UsuariosLista/>} />
+            <Route path="/usuarios/:id" element={<UsuarioDetalhes/>} />
    
         </Routes>
 

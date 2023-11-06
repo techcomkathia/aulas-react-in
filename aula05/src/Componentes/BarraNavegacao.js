@@ -12,6 +12,7 @@ function BarraNavegacao() {
         <Link to="/contatos">Contatos</Link>
         <Link to='/telefones'>Telefones</Link>
         <Link to='/listaLivros'> Livros</Link>
+        <Link to='/usuarios'>Usuarios</Link>
     </nav>
   )
 }
