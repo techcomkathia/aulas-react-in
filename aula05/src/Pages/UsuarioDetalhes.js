@@ -7,7 +7,7 @@ export default function UsuarioDetalhes(){
     return(
         <div>
             <DetalhesUsuario/>
-            <button onClick={()=>navigate(-1)}>Voltar</button>
+            <button onClick={()=>navigate('/usuarios')}>Voltar</button>
         </div>
     )
 }
