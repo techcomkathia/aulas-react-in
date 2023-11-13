@@ -41,7 +41,7 @@ export function CadastroFuncionario() {
   }, []);
 
   function handleClickBotao() {
-    setListaFuncionarios([...listaFuncionarios, { nome: Nome, email: Email, telefone: Telefone }]);
+    setListaFuncionarios([...listaFuncionarios, { name: Nome, email: Email, phone: Telefone }]);
     setNome('');
     setEmail('');
     setTelefone('');
@@ -71,7 +71,7 @@ export function CadastroFuncionario() {
                   />
                 </div>
               ))}
-            </div>          
+            </div>            
         </div>
       </div>
     </div>
