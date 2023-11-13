@@ -1,5 +1,5 @@
 import './App.css';
-import Funcionario from './Componentes/Funcionarios';
+import Funcionario, { CadastroFuncionario } from './Componentes/Funcionarios';
 import TextoFormulario from './Componentes/Formulario';
 
 
@@ -8,9 +8,8 @@ function App() {
     <div className="App">
       <Funcionario nome='Káthia' email='kathia@email.com' telefone= '81 9999-9999'></Funcionario>
       <TextoFormulario/>
-    </div>
-
-    
+      <CadastroFuncionario></CadastroFuncionario>
+    </div>    
   );
 }
 
