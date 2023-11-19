@@ -1,6 +1,7 @@
 import './App.css';
 import Funcionario, { CadastroFuncionario } from './Componentes/Funcionarios';
-import TextoFormulario from './Componentes/Formulario';
+import TextoFormulario from './Componentes/Formulario.js'
+import BuscarCep from './Componentes/BuscarCep';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Funcionario nome='Káthia' email='kathia@email.com' telefone= '81 9999-9999'></Funcionario>
       <TextoFormulario/>
       <CadastroFuncionario></CadastroFuncionario>
+      <BuscarCep></BuscarCep>
     </div>    
   );
 }
