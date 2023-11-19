@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 // nossos componentes vão funcionar como uma boneca matrioska
-// o componente1 passas as propriedades para seus filhos
+// o componente1 passas as propriedades (estado) para seus filhos
 // que passam para seus filhos
 // dessa forma o componente5 tem acesso as propriedades do seu "tataravô"
 
