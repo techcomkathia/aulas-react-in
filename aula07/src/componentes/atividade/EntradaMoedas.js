@@ -18,8 +18,10 @@ export function EntradaMoedas(){
     }
     return(
         <form>
-            <label>Moeda</label>
+            <h1>Conversor de Moedas</h1>
+            <p>Digite o valor em reais que deseja converter</p>
             <input placeholder="Digite o valor em R$:" type="number" onChange={(e)=>handleChange(e)}></input>
+            <br/>
             <button onClick={(e)=>handleClick(e)}>Converter</button>
             <p>{real}</p>
         </form>
