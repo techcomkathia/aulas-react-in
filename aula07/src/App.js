@@ -1,6 +1,5 @@
 import './App.css';
-import ConversorMoedas from './componentes/atividade/ConversorMoedasContexto';
-// import EntradaMoedas from './componentes/atividade/EntradaMoedas'
+import ConversorMoedas from './componentes/atividade/ConversorMoedas';
 
 
 
