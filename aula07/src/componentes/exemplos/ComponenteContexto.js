@@ -12,11 +12,12 @@ import {createContext, useContext, useEffect, useState} from 'react'
 
 const ComponenteContext = createContext(null)
 
-export default function ComponenteContexto(){
+export default function Componente(){
     let [qtdClick, setQtdClick] = useState(0)
 
     return(
-        //estamos usando o .Provider para providenciar para a aplicação os valores definidos para o value
+        //estamos usando o .Provider para prover acesso aos valores aos componentes que estão dentro do contexto. 
+        // Os valores são passados como objetos para o atributo value
         <>
         <ComponenteContext.Provider value={{qtdClick, setQtdClick}}>
             <Component1/>
@@ -28,7 +29,7 @@ export default function ComponenteContexto(){
 }
 
 export function Component1(){
-
+    // usando o useContext para trazer as propriedades com seus valores para vairáveis locais 
     let {qtdClick} = useContext(ComponenteContext)
     let {setQtdClick} = useContext(ComponenteContext)
     
@@ -70,11 +71,12 @@ export function Componente3(){
             setClick10(0)
         }
         else{
+        // caso o valor seja diferente de 0 fará a soma de 10
             setClick10(qtdClick+10)
         }
     }
 
-    //usando a qtdClicks como um array de depedências para executar a função que altera o estado do click10
+    //usando a qtdClicks como um array de depedências para executar a função que altera o estado do click10 apenas quando o qtdClick tiver seu valor alterado
     useEffect(handeSetClick,[qtdClick])
 
     

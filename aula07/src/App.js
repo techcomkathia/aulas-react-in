@@ -1,12 +1,14 @@
 import './App.css';
-import ComponenteContexto from './componentes/exemplos/ComponenteContexto';
+import ConversorMoedas from './componentes/atividade/ConversorMoedasContexto';
+// import EntradaMoedas from './componentes/atividade/EntradaMoedas'
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ComponenteContexto></ComponenteContexto>
-        
+          <ConversorMoedas/>
       </header>
     </div>
   );
