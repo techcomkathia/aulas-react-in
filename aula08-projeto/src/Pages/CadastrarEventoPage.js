@@ -1,4 +1,4 @@
-import { CadastroNovoEvento } from "../componentes/Eventos";
+import { CadastroNovoEvento } from "../componentes/CadastroNovoEvento";
 
 
 export default function CadastrarEventoPage(){

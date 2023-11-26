@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './App.css';
+
 import { EventosContexto, listaTodosEventos } from './componentes/EventosContexto';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BarraNavegacao from './componentes/barraNavegacao';
-import Home from './Pages/HomePage';
 import HomePage from './Pages/HomePage';
 import CadastrarEventoPage from './Pages/CadastrarEventoPage';
 

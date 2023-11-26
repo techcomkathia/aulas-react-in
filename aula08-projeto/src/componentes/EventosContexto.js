@@ -21,4 +21,4 @@ export const listaTodosEventos = [
     }
   ];
 
-export const EventosContexto = createContext('')
+export const EventosContexto = createContext(listaTodosEventos)
