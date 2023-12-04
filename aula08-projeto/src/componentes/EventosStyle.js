@@ -54,6 +54,14 @@ export const style={
         color: "#ffffff",
         cursor: "pointer",
       },
+      carrinhoItem: {
+        backgroundColor: "#708090", // Cor de fundo para os itens no carrinho
+        padding: "10px",
+        margin: "10px",
+        borderRadius: "10px",
+        color: "#fff", // Cor do texto para os itens no carrinho
+      }
+    
    
      
 }

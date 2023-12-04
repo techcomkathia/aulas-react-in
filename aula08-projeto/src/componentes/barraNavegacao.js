@@ -15,6 +15,11 @@ export default function BarraNavegacao(){
             Cadastar Evento
           </Link>
         </li>
+        <li>
+          <Link to="/carrinho" style={style.navLink}>
+            Carrinho
+          </Link>
+        </li>
       </ul>
     </nav>
   );
