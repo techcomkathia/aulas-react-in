@@ -10,7 +10,8 @@ export function CadastroNovoEvento() {
     const [novoEvento, setNovoEvento] = useState({
         nome: "",
         data: "",
-        url: ""
+        url: "",
+        qtd:""
     });
 
     const [mensagemSucesso, setMensagemSucesso]= useState('')
