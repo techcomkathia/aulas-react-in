@@ -1,9 +1,9 @@
-// MoedaConversor.js
+// MoedaGeral.js
 import React, { useContext, useEffect, useState } from 'react';
 import { ConversorMoedasContext } from './ConversorMoedasContexto';
 
 export function MoedaGeral({ moeda }) {
-  const { real } = useContext(ConversorMoedasContext);
+  const { real, setReal } = useContext(ConversorMoedasContext);
   const [conversao, setConversao] = useState({
     totalConvertido: 0,
     valorCompra: 0,
@@ -13,6 +13,9 @@ export function MoedaGeral({ moeda }) {
   useEffect(() => {
     const fetchConversao = async () => {
       try {
+        // Atualiza o estado de real antes de chamar a API
+        setReal((prevReal) => prevReal);
+
         const response = await fetch(
           `https://economia.awesomeapi.com.br/json/last/${moeda}-BRL`
         );
@@ -20,6 +23,7 @@ export function MoedaGeral({ moeda }) {
         const cotacao = data[`${moeda}-BRL`];
         const totalConvertido = real * cotacao.bid;
 
+        // Atualiza o estado com os dados mais recentes
         setConversao({
           totalConvertido,
           valorCompra: cotacao.bid,
@@ -31,7 +35,7 @@ export function MoedaGeral({ moeda }) {
     };
 
     fetchConversao();
-  }, [real, moeda]);
+  }, [real, moeda, setReal]);
 
   return (
     <div style={{ border: '1px solid red', margin: '5px', padding: '10px' }}>
