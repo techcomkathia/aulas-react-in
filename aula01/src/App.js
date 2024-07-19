@@ -3,8 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function soma(c,d){
-  return c+d+10-5
-
+  return c+d+10+20
 
 }
 
