@@ -2,8 +2,8 @@ import Nome from './Nome.js'
 import logo from './logo.svg';
 import './App.css';
 
-function soma(a,b){
-  return a+b
+function soma(c,d){
+  return c+d
 }
 
 function App() {
