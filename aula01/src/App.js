@@ -2,13 +2,9 @@ import Nome from './Nome.js'
 import logo from './logo.svg';
 import './App.css';
 
-<<<<<<< HEAD
-function soma(y,z){
-  return y+z+10
-=======
 function soma(c,d){
   return c+d
->>>>>>> abc212a4f5a49b9e8411b2e7248e30d1c989cdc1
+
 }
 
 function App() {
